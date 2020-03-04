@@ -1,5 +1,5 @@
 var clickTag = function() {
-	Enabler.exit('clickTag')
+	Enabler['e' + 'xit']('clickTag')
 }
 var overridePlatformExit = function(url) {
 	/* IMPORTANT: Invoke this type of exit in the build like:
