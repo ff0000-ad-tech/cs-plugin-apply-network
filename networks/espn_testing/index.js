@@ -1,7 +1,7 @@
 module.exports = {
-	'clicktags.js': 'espn_on_channel',
+	'clicktags.js': 'standard',
 	'exit_aux.js': 'standard',
-	'exit.js': 'espn_raycom',
+	'exit.js': 'standard',
 	'onload.js': 'standard',
 	'meta.html': null,
 	'script.html': null
