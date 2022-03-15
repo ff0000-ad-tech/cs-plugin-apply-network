@@ -1,5 +1,5 @@
-this.exit = function(clickTag) {
-	var clickUrl = this.appendMacro('%%CLICK_URL_UNESC%%', clickTag)
+this.exit = function(url) {
+	var clickUrl = this.appendMacro('%%CLICK_URL_UNESC%%', url)
 	var cachebuster = '%%CACHEBUSTER%%'
 	if (cachebuster.search('^%%') > -1) {
 		cachebuster = new Date().getTime()
@@ -19,8 +19,8 @@ this.exit = function(clickTag) {
 		case 'MRAID_IOS':
 			console.log('Network -> MRAID EXIT (ESPN App, iOS)')
 			// do not append macro to the sportscenter deeplink
-			if (clickTag.search(/^sportscenter/) > -1) {
-				mraid.open(clickTag)
+			if (url.search(/^sportscenter/) > -1) {
+				mraid.open(url)
 			} else {
 				mraid.open(clickUrl)
 			}

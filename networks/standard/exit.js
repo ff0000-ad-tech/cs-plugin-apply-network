@@ -1,4 +1,4 @@
-this.exit = function(clickTag) {
+this.exit = function(url) {
 	console.log('Network -> STANDARD EXIT')
-	window.open(clickTag, '_blank')
+	window.open(url, '_blank')
 }
